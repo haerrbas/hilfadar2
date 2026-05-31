@@ -14,6 +14,7 @@
 5. [Projektorganisation [Optional]](#5-projektorganisation-optional)
 6. [KI-Deklaration](#6-ki-deklaration)
 7. [Anhang [Optional]](#7-anhang-optional)
+8. [Selbst-Check: Erfüllung der Vorgaben](#8-selbst-check-erfüllung-der-vorgaben)
 
 > **Hinweis:** Massgeblich sind die im **Unterricht** und auf **Moodle** kommunizierten Anforderungen.
 
@@ -172,3 +173,52 @@ Die Doku wurde erstellt, indem die eigenen Artefakte (PDFs der Abgaben, Skizzen,
 - **Testskript & Materialien:** Testleiterdokument (Szenario-Aufgaben, Feedback-Grid, Nachbefragung) – Vorlage für beide Tests.
 - **Rohdaten/Auswertung:** Ausgefüllte Testleiterdokumente vom 20.05.2026: `Hilfadar_Usability_Test-Sandro.docx` und `Hilfadar_Usability_Test-Kanita.docx` (Prototyp v1.0). Getesteter Figma-Prototyp: https://www.figma.com/proto/b8ncFxcTipBZwTg0Qd4Zen/Helpadar
   > TODO: Die beiden .docx (und ggf. die Ideations-Notizen «Kommentare & Reflexion») ins Repository legen, z. B. unter `/docs`, und hier verlinken.
+## 8. Selbst-Check: Erfüllung der Vorgaben
+
+> Diese Selbst-Prüfung dient der Abgabe-Vorbereitung und orientiert sich am offiziellen Bewertungsraster (Aufgabenstellung «Prototyping-Projekt», Seite 3). Sie ersetzt nicht die Bewertung durch die Dozierenden.
+> **Legende:** ✅ erfüllt · ⚠️ teilweise / mit offenen Punkten · ❌ noch nicht erfüllt
+
+### 8.1 Mindestanforderungen (Voraussetzungen für das Bestehen)
+Eine Nicht-Erfüllung eines dieser Punkte kann – unabhängig von der Punktzahl – zu einer ungenügenden Bewertung führen.
+
+| # | Anforderung | Status | Beleg / Hinweis |
+| --- | --- | --- | --- |
+| 1 | Mindestumfang gemäss Übungen erfüllt und dokumentiert | ✅ | Phasen Understand/Define → Sketch → Decide → Prototype → Validate sind durchlaufen und in Kap. 3.1–3.5 dokumentiert. |
+| 2 | Online zugängliche App | ✅ | https://hilfadar.netlify.app |
+| 3 | GitHub-Repository mit Code **und** Dokumentation, für Dozierende zugänglich | ⚠️ | Repo ist public (https://github.com/haerrbas/hilfadar2). README ist vorhanden; **der SvelteKit-Sourcecode muss vor Abgabe noch in dieses Repo gepusht werden** (siehe 8.4). |
+| 4 | Evaluation mit Auswertung gemäss Übungen | ✅ | n = 2 (Sandro, Kanita), 20.05.2026; siehe Kap. 3.5. Quantitative Felder (Skala 1–10, Issue-/Schweregrad-Tabelle) wurden im Testleiterdokument nicht ausgefüllt; Grundlage sind die qualitativen Feedback-Grids. |
+| 5 | Einhaltung rechtlicher Rahmenbedingungen (u. a. Urheberrecht) | ⚠️ | Figma-Mockup als Community-Datei lizenziert; **Lizenzhinweise zu Icons/Schriften im Anhang (Kap. 7) noch zu vervollständigen**. |
+| 6 | KI-Einsatz verantwortungsvoll und transparent | ✅ | Kap. 6 (Tools, Zweck & Umfang, Abgrenzung eigene Leistung, Prompt-Vorgehen, Reflexion) ist ausgefüllt. |
+
+### 8.2 A) Mindestumfang (max. 60 Pkt → Note 4.0)
+
+| Kriterium | Pkt. | Status | Notiz |
+| --- | --- | --- | --- |
+| Kernfunktionalität & technische Qualität | 15 | ⚠️ | App ist online und erfüllt die Need/Give-Kernfunktion; **nachvollziehbare Code-Struktur** wird erst nach dem Code-Push (8.4) belegbar. |
+| Nutzerzentrierung & Bedienbarkeit | 15 | ✅ | Klare Trennung Need/Give via Bottom-Navigation, schwarz-weisses Schema für Fokus, transparente Statusmeldungen («Searching for …»), Match-Screen mit Name/Avatar/Rating. Figma-Mockup vorhanden und verlinkt. |
+| Vorgehen | 15 | ✅ | Phasenbasiert dokumentiert (Kap. 3.1–3.5); Entscheide explizit begründet (Kap. 3.3: Klarheit der Rollen, Skill-Fokus, Mobile-First). |
+| Evaluation | 10 | ✅ | Tests mit Sandro & Kanita durchgeführt, Findings konsolidiert, **4 priorisierte Verbesserungen abgeleitet** (Kap. 3.5). Mit ehrlicher Deklaration der nicht ausgefüllten quantitativen Felder. |
+| Dokumentation & Video | 5 | ⚠️ | Doku nach Vorlage vollständig. **Screenshots der fertigen App fehlen noch** (gemäss Raster Pflicht – siehe TODO-Marker in Kap. 3.4.1). **Video noch zu erstellen** (~5 Min, max. 10 Min Walkthrough). |
+
+### 8.3 B) Erweiterungen (max. 40 Pkt)
+Optional – jeder Punkt hier ist «Kür» über den Mindestumfang hinaus.
+
+| Kriterium | Pkt. | Status | Notiz |
+| --- | --- | --- | --- |
+| Hohe Qualität im Mindestumfang | 10 | offen | Wird aus der Endbewertung der A-Kriterien abgeleitet. |
+| Produkt-/Funktions-Erweiterungen | 15 | offen | Aktuell keine über den Mindestumfang hinausgehenden Features ausgewiesen. Falls vorhanden, in Kap. 4 nach dem vorgegebenen Schema dokumentieren. |
+| Zusätzliche Methoden/Artefakte | 10 | offen | Optional; nicht explizit eingesetzt. |
+| Projektorganisation | 5 | ⚠️ | Sprechende Commit-Messages sind ab Commit 2 vorhanden; **.gitignore** ist gesetzt. **Issue-Management nicht genutzt** – könnte als kleine Erweiterung dienen. |
+
+### 8.4 Offene Punkte vor Abgabe (Checkliste)
+In dieser Reihenfolge empfohlen:
+
+1. **Sourcecode in dieses Repo bringen** – SvelteKit-Projekt aus dem bestehenden Stand in `hilfadar2` pushen (lokal z. B. `git remote set-url origin https://github.com/haerrbas/hilfadar2.git` und `git push -u origin main`). **Wichtig: Ohne Code im Repo ist Mindestanforderung 3 nicht erfüllt.**
+2. **Screenshots der fertigen App** (Need-Einstieg, Match-Screen, Order-done, Give-Flow) in Kap. 3.4.1 einfügen.
+3. **Video** (~5 Min, max. 10 Min): kommentierter Walkthrough aller Workflows; ohne Code- oder Vorgehens-Teil.
+4. **Testdokumente** `Hilfadar_Usability_Test-Sandro.docx` und `Hilfadar_Usability_Test-Kanita.docx` ins Repo legen (z. B. unter `/docs`) und in Kap. 7 verlinken.
+5. **Lizenzhinweise** zu verwendeten Icons/Schriften im Anhang (Kap. 7) ergänzen.
+6. **«Repository»-Link** im Kopf der README sowie in Kap. 5 prüfen: zeigt aktuell auf das alte `hilfadar`. Falls `hilfadar2` das Abgabe-Repo ist, auf `…/hilfadar2` ändern.
+7. *Optional (für B-Punkte):* 1–2 sichtbare **Erweiterungen** umsetzen (z. B. den «Searching for …»-Screen aus Validate-Erkenntnis verbessern oder GitHub Issues nutzen) und in Kap. 4 dokumentieren.
+
+> **Methodik dieser Selbst-Prüfung:** Die Status-Einschätzungen basieren auf dem aktuellen Inhalt dieses Repositories und der deployten App. Die Selbst-Prüfung wurde mit Unterstützung eines KI-Tools (Claude) erstellt; die fachliche Verantwortung liegt bei der/dem Studierenden.
