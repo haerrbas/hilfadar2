@@ -107,26 +107,25 @@ Die Durchführung erfolgte phasenbasiert (Understand/Define → Sketch → Decid
 - **Besondere Entscheidungen:** **Settings** ist bewusst als Platzhalter umgesetzt, um die verfügbare Zeit auf die beiden Kern-Flows (Need/Give) zu konzentrieren – eine bewusste Scope-Reduktion zugunsten der Kernfunktionalität.
 
 ### 3.5 Validate
-- **URL der getesteten Version:** Stand **20.05.2026** der App unter https://hilfadar.netlify.app
-  > TODO: Falls die getestete Fassung separat deployt wurde, hier die separate URL/den Commit-Stand (Tag/Branch vom 20.05.2026) eintragen. **Wichtig:** Der Test wurde auf der Version per 20.05. durchgeführt – das ist hier so vermerkt.
-- **Ziele der Prüfung:** Sind die zwei Kern-Flows (Need/Give) selbsterklärend? Verstehen Nutzende den skill-basierten Sucheinstieg und das Match-/Bestätigungs-Prinzip? Wo entstehen Unsicherheiten (z. B. Suchradius, Verfügbarkeit, Zeitpunkt der Hilfe)?
-- **Vorgehen:**
-  > TODO: moderiert/unmoderiert, remote/on-site eintragen.
-- **Stichprobe:**
-  > TODO: Anzahl und Profil der Testpersonen eintragen (z. B. «n = X, Studierende / Quartierbewohner:innen»).
+- **Getestete Version:** Prototyp **v1.0**, Stand **20.05.2026**, getestet auf der deployten App (https://hilfadar.netlify.app) sowie am interaktiven Figma-Prototyp. Der Test wurde bewusst auf der Version **per 20.05.2026** durchgeführt.
+- **Ziele der Prüfung:** Sind die zwei Kern-Flows (Need/Give) selbsterklärend? Verstehen Nutzende den skill-basierten Sucheinstieg sowie das Match- und Bestätigungs-Prinzip (Accept/Decline, Rating)? Wo entstehen Unsicherheiten?
+- **Vorgehen:** Moderierter, szenariobasierter Usability-Test (Testleiterdokument). Testleiter: Basil. Die beiden Testaufgaben wurden einzeln und nacheinander übergeben; Beobachtungen und Feedback wurden via Feedback-Grid (gut/schlecht/Ideen/offene Fragen) und Nachbefragung festgehalten.
+- **Stichprobe:** n = 2 Testpersonen (Sandro, Kanita).
 - **Aufgaben/Szenarien:**
-  > TODO: Ausformulierte Testaufgaben eintragen, z. B. «Du brauchst Hilfe beim Tragen eines Möbelstücks – finde über Hilfadar jemanden und schliesse den Auftrag ab.» und das Give-Pendant.
-- **Kennzahlen & Beobachtungen:**
-  > TODO: Erfolgsquote, Zeitbedarf und qualitative Beobachtungen eintragen. Die folgenden Findings stammen aus der Auswertung/Diskussion und können hier als qualitative Beobachtungen einfliessen:
-  - Offene Verständnisfragen rund um **Suchradius** («Wie weit soll die Suche gehen?»).
-  - Wunsch nach klarer **Skill-Definition** und nach Abbildung der **Verfügbarkeit**.
-  - Unterscheidung **«jetzt» vs. «auf Bestellung»** (sofortige vs. geplante Hilfe).
-  - Risiko unerwünschter Vorselektion: Matching soll über **Skills**, nicht über persönliche Merkmale erfolgen.
-- **Zusammenfassung der Resultate:** Die Grundidee der zwei Rollen (Need/Give) und der skill-basierte Ablauf wurden verstanden. Die wesentlichen offenen Punkte betreffen weniger die Bedienung als die **Logik des Matchings**: Suchradius, Skill-Definition, Verfügbarkeit sowie der Zeitpunkt der Hilfe. Bestätigt wurde die Priorisierung **Skills vor Zeit**.
+  1. **Hilfe anfragen (Need):** «Sie sind neu in der Stadt und möchten am nächsten Samstag umziehen. Sie benötigen jemanden, der Ihnen beim Tragen von Kisten hilft – für etwa 2 Stunden. Finden Sie über Hilfadar jemanden in Ihrer Nähe und nehmen Sie Kontakt auf.»
+  2. **Hilfe anbieten (Give):** «Sie haben heute Nachmittag etwas Zeit und möchten einer Nachbarin/einem Nachbarn beim Einkaufen helfen. Bieten Sie Ihre Hilfe für den Einkauf über Hilfadar an.»
+- **Beobachtungen & qualitative Findings (aus den Feedback-Grids):**
+  - **Positiv:** Die Grundidee überzeugte beide Testpersonen. Der Ansatz mit den **zwei Wegen (Need/Give)** und das Workflow-Design wurden gelobt; eine Person bewertete die App als **«sehr verständlich»**, insbesondere die **Skill-Auswahl** («suchen und hinzufügen») sowie **Accept/Decline und das Rating**.
+  - **Gestört/Fehlend:** Wunsch nach **Karten-/Maps-Integration**; mehr **Erläuterung/Beschreibung bei den einzelnen Schritten**; **Account/Profil** vermisst; ausgebautes **Bewertungs-/Karma-System** pro Hilfegeber:in/Suchende:r gewünscht.
+  - **Unklar:** Der **«Searching for …»-Screen** (Wartezustand) war unklar; offene Fragen zu **Zeit-/Terminangabe** und **Vorab-Planung/Buchung**.
+  - **Neue Ideen/Anforderungen:** In «Need» die Einträge zuerst anzeigen; **Karma-Punkte**; **Suche via Karte** mit aktuell offenen Aufgaben.
+  > **Hinweis (Ehrlichkeit der Daten):** Die quantitativen Felder (Skala 1–10 zur Bedienbarkeit, Issue-/Schweregrad-Tabelle, Erfolgsquote/Zeitbedarf) wurden im Test nicht ausgefüllt und werden hier daher nicht als Kennzahlen ausgewiesen. Grundlage sind die qualitativen Feedback-Grids beider Testpersonen.
+- **Zusammenfassung der Resultate:** Beide Testpersonen verstanden die Grundidee und die Trennung in Need/Give; die Skill-Auswahl und das Accept/Decline-/Rating-Prinzip kamen gut an. Die wichtigsten Schwachstellen liegen beim **Status-/Wartescreen («Searching for»)**, bei der fehlenden **Karten-/Standort-Integration** und beim Wunsch nach **Profil/Account** sowie einem sichtbareren **Bewertungs-/Karma-System**.
 - **Abgeleitete Verbesserungen (priorisiert):**
-  1. **Suchradius sichtbar/einstellbar machen** – reduziert die häufigste Unsicherheit (hoher Nutzen, mittlerer Aufwand).
-  2. **Verfügbarkeit & Zeitpunkt («jetzt» / «auf Bestellung») im Flow abbilden** – schärft das Matching.
-  3. **Skill-Definition/-Auswahl präzisieren** – klarere Kategorien/Skills im Sucheinstieg.
+  1. **«Searching for …»-Screen klarer gestalten** – verständlicher Wartezustand mit mehr Erläuterung pro Schritt (von beiden Testpersonen angestossen; hoher Nutzen, mittlerer Aufwand).
+  2. **Karten-/Maps-Integration** – Standort der Hilfe und Navigation sichtbar machen («Suche via Karte»).
+  3. **Profil/Account einführen** – Identität und Wiedererkennbarkeit, Basis für Vertrauen.
+  4. **Bewertungs-/Karma-System ausbauen** – sichtbares Rating/Karma pro Person; Terminangabe/Vorab-Planung für geplante Hilfe.
   > Falls eine dieser Verbesserungen bereits im Prototyp umgesetzt wurde: in Kapitel 4 dokumentieren.
 
 ## 4. Erweiterungen [Optional]
@@ -170,7 +169,6 @@ Die Doku wurde erstellt, indem die eigenen Artefakte (PDFs der Abgaben, Skizzen,
 - **Quellen / Assets:**
   - Figma-Mockup (Community-Datei): https://www.figma.com/community/file/1631066429495712411
   > TODO: Verwendete Assets/Icons/Schriften inkl. Lizenz ergänzen.
-- **Testskript & Materialien:**
-  > TODO: Link/Datei zu Testaufgaben und -protokoll ergänzen.
-- **Rohdaten/Auswertung:**
-  > TODO: Link/Datei zu Notizen/Auswertung (Kommentare & Reflexion vom 20.05.2026) ergänzen.
+- **Testskript & Materialien:** Testleiterdokument (Szenario-Aufgaben, Feedback-Grid, Nachbefragung) – Vorlage für beide Tests.
+- **Rohdaten/Auswertung:** Ausgefüllte Testleiterdokumente vom 20.05.2026: `Hilfadar_Usability_Test-Sandro.docx` und `Hilfadar_Usability_Test-Kanita.docx` (Prototyp v1.0). Getesteter Figma-Prototyp: https://www.figma.com/proto/b8ncFxcTipBZwTg0Qd4Zen/Helpadar
+  > TODO: Die beiden .docx (und ggf. die Ideations-Notizen «Kommentare & Reflexion») ins Repository legen, z. B. unter `/docs`, und hier verlinken.
